@@ -1,0 +1,8 @@
+# Author: Weston Preising
+# Made with help of: https://zed0.co.uk/clang-format-configurator/
+IndentWidth: 4
+TabWidth: 4
+PointerAlignment: Left
+AlwaysBreakTemplateDeclarations: Yes
+BreakBeforeBraces: Allman
+AllowShortFunctionsOnASingleLine: None

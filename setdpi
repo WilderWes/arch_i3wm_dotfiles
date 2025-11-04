@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+case "$1" in
+laptop)
+    xrdb -merge <<<"Xft.dpi: 162"
+    ;;
+docked)
+    xrdb -merge <<<"Xft.dpi: 96"
+    ;;
+*)
+    echo "Usage: $0 hidpi | docked"
+    exit 1
+    ;;
+esac
+i3-msg restart
+xrdb -query | grep -i Xft.dpi
