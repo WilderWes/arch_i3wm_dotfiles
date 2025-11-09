@@ -24,7 +24,7 @@ exec_always --no-startup-id feh --bg-scale ~/Dropbox/wp_personal/nightmode_wallp
 exec_always --no-startup-id picom --config ~/.config/picom/picom.conf -b
 
 # swap caps and ctrl
-exec_always --no-startup-id setxkbmap -option caps:ctrl_modifier
+exec_always --no-startup-id setxkbmap -option ctrl:nocaps
 
 
 # Start XDG autostart .desktop files using dex. See also
