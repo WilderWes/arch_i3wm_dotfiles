@@ -22,6 +22,6 @@ Author: Weston Preising
 ## Testing / School Specific
 
 - eclipse
-  - install flatseal: GDK_SCALE=2 GDK_DPI_SCALE=0.5
+  - GDK_SCALE=2 GDK_DPI_SCALE=0.5
 - rars
   - using a custom script from ChatGPT to help with antialiasing

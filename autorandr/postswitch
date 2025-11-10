@@ -1,0 +1,15 @@
+#! /bin/sh
+
+log="$HOME/.cache/autorandr.log"
+
+case "$AUTORANDR_CURRENT_PROFILE" in
+laptop)
+    ~/setdpi laptop
+    ;;
+docked)
+    ~/setdpi docked
+    ;;
+*)
+    echo "$(date): no dpi rule set for $AUTORANDR_CURRENT_PROFILE" >>$log
+    ;;
+esac
