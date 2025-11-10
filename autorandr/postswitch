@@ -18,9 +18,23 @@ docked)
 esac
 
 # check if i3lock is running
-if (pgrep i3lock >/dev/null); then
-    i3-msg reload
-    exit 0
+if (pgrep --exact i3lock >/dev/null); then
+    i3-msg reload # reload only b/c restart removes i3lock
+else
+    i3-msg restart
 fi
 
-i3-msg restart
+# restart common programs that don't reset with dpi changes
+if (pgrep --exact firefox >/dev/null); then
+    pkill --exact firefox
+    i3-msg 'workspace 1; exec firefox'
+fi
+
+if (pgrep --exact dunst >/dev/null); then
+    pkill --exact dunst
+    dunst &
+fi
+
+if (pgrep --exact rofi >/dev/null); then
+    pkill --exact rofi
+fi
