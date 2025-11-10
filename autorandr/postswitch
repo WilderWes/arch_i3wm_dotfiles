@@ -35,6 +35,6 @@ if (pgrep --exact dunst >/dev/null); then
     dunst &
 fi
 
-if (pgrep --exact rofi >/dev/null); then
-    pkill --exact rofi
+if (pgrep --exact 1password >/dev/null); then
+    pkill --exact 1password
 fi
