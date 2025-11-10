@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# per chatgpt need to unset this for autorandr/postswitch to work
+unset I3SOCK # ensure i3-msg finds the live socket
+
 case "$1" in
 laptop)
     xrdb -merge <<<"Xft.dpi: 162"
@@ -8,7 +11,7 @@ docked)
     xrdb -merge <<<"Xft.dpi: 96"
     ;;
 *)
-    echo "Usage: $0 hidpi | docked"
+    echo "Usage: $0 laptop | docked"
     exit 1
     ;;
 esac
