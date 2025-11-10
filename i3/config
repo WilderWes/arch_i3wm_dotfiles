@@ -63,7 +63,7 @@ floating_modifier $mod
 # start a terminal
 bindsym $mod+Escape exec --no-startup-id loginctl lock-session
 bindsym $mod+Return exec --no-startup-id kitty
-bindsym $mod+b exec --no-startup-id brave
+bindsym $mod+b exec --no-startup-id firefox
 bindsym $mod+f exec --no-startup-id kitty -e yazi
 bindsym $mod+p exec --no-startup-id 1password
 bindsym $mod+d exec --no-startup-id discord
