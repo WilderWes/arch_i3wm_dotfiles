@@ -1,5 +1,8 @@
 #! /bin/sh
 
+# per chatgpt need to unset this for autorandr/postswitch to work
+unset I3SOCK # ensure i3-msg finds the live socket
+
 log="$HOME/.cache/autorandr.log"
 
 case "$AUTORANDR_CURRENT_PROFILE" in
@@ -13,3 +16,11 @@ docked)
     echo "$(date): no dpi rule set for $AUTORANDR_CURRENT_PROFILE" >>$log
     ;;
 esac
+
+# check if i3lock is running
+if (pgrep i3lock >/dev/null); then
+    i3-msg reload
+    exit 0
+fi
+
+i3-msg restart
