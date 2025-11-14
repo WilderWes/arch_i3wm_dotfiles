@@ -42,8 +42,6 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock -c 1a1b26 --nofork
 exec --no-startup-id nm-applet
 exec --no-startup-id pasystray
 exec --no-startup-id /usr/bin/dropbox
-exec --no-startup-id redshift-gtk
-exec --no-startup-id /usr/lib/geoclue-2.0/demos/agent
 
 
 # Use pactl to adjust volume in PulseAudio.
