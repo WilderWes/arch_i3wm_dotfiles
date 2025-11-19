@@ -22,9 +22,6 @@ exec_always --no-startup-id picom --config ~/.config/picom/picom.conf -b
 exec_always --no-startup-id feh --bg-fill ~/Dropbox/wp_personal/nightmode_wallpaper.png
 # dpi
 exec_always --no-startup-id xrdb -merge ~/.Xresources
-#redshift
-exec_always --no-startup-id /usr/lib/geoclue-2.0/demos/agent
-exec --no-startup-id redshift-gtk
 # Start XDG autostart .desktop files using dex. See also https://wiki.archlinux.org/index.php/XDG_Autostart
 exec --no-startup-id dex-autostart --autostart --environment i3
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the screen before suspend. Use loginctl lock-session to lock your screen.
