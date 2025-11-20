@@ -29,6 +29,7 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock -c 1a1b26 --nofork
 exec --no-startup-id nm-applet
 exec --no-startup-id pasystray
 exec --no-startup-id /usr/bin/dropbox
+exec --no-startup-id redshift-gtk
 
 # swap caps and ctrl
 exec_always --no-startup-id setxkbmap -option ctrl:nocaps
