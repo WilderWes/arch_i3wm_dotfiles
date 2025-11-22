@@ -31,9 +31,6 @@ exec --no-startup-id pasystray
 exec --no-startup-id /usr/bin/dropbox
 exec --no-startup-id redshift-gtk
 
-# swap caps and ctrl
-exec_always --no-startup-id setxkbmap -option ctrl:nocaps
-
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5% && $refresh_i3status
