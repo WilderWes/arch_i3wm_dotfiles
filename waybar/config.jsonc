@@ -18,7 +18,7 @@
         "sway/window"
     ],
     "modules-right": [
-        "mpd",
+        // "mpd",
         "idle_inhibitor",
         "pulseaudio",
         "network",
@@ -27,8 +27,8 @@
         "memory",
         "temperature",
         "backlight",
-        "keyboard-state",
-        "sway/language",
+        // "keyboard-state",
+        // "sway/language",
         "battery",
         "battery#bat2",
         "clock",
