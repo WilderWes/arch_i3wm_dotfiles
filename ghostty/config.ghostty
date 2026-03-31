@@ -1,0 +1,17 @@
+# https://ghostty.org/docs/config/reference
+
+theme = TokyoNight
+
+font-family = JetBrains Mono
+font-feature = -calt
+copy-on-select = clipboard
+
+window-decoration = server
+confirm-close-surface = false
+
+window-inherit-working-directory = false
+working-directory = home
+
+bell-features = no-audio
+
+shell-integration-features = ssh-terminfo,ssh-env
