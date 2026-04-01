@@ -66,8 +66,7 @@ This is an Arch Install using the cachyos-repos and some of the post-install tip
 
 ## Terminal & Shell
 
-- [ghostty](https://ghostty.org/download) with JetBrains Mono and Tokyo Night theme
-  - `~/.ssh/config` set to use `xterm-256color`
+- [ghostty](https://ghostty.org/download) -- JetBrains Mono and Tokyo Night theme
 - [oh-my-zsh](https://ohmyz.sh/) with plugins:
   - [git](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git) (built-in)
   - [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
@@ -75,9 +74,9 @@ This is an Arch Install using the cachyos-repos and some of the post-install tip
   - [zsh-completions](https://github.com/zsh-users/zsh-completions)
   - [gradle-completion](https://github.com/gradle/gradle-completion)
   - [zsh-nvm](https://github.com/lukechilds/zsh-nvm) (lazy-loaded for faster startup)
-- [starship](https://starship.rs/) prompt
-- [eza](https://github.com/eza-community/eza) as ls replacement
-- [fastfetch](https://github.com/fastfetch-cli/fastfetch) system info (runs on shell start)
+- [starship](https://starship.rs/) -- terminal prompt
+- [eza](https://github.com/eza-community/eza) -- ls replacement
+- [fastfetch](https://github.com/fastfetch-cli/fastfetch) -- fetch system info on shell start
 - [cpdf](https://github.com/coherentgraphics/cpdf-binaries) -- PDF manipulation CLI
 - [tldr](https://github.com/tldr-pages/tldr) -- quick cli tips n' tricks
 - [bear](https://github.com/rizsotto/Bear) -- reads compile commands from make and adds hints to clangd
