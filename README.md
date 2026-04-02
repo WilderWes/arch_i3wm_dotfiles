@@ -16,7 +16,7 @@ This is an Arch Install using the cachyos-repos and some of the post-install tip
 
 ## Arch Setup
 
-- [cachyos-repos](https://wiki.cachyos.org/features/optimized_repos/#adding-our-repositories-to-an-existing-arch-linux-install) -- repos have some nice pre-built binaries `paru`, `vesktop`, `qt5-webengine (for davinci-resolve)` to name a few
+- [cachyos-repos](https://wiki.cachyos.org/features/optimized_repos/#adding-our-repositories-to-an-existing-arch-linux-install) -- repos have some nice pre-built binaries `paru`, `vesktop`, `localsend`, `qt5-webengine (for davinci-resolve)` to name a few
   - [downgrade](https://aur.archlinux.org/packages/downgrade) -- makes it easy to rollback a broken pkg
 - [linux-zen kernel](https://wiki.archlinux.org/title/Kernel) -- for improved desktop performance and responsiveness
 - [display-manager](https://github.com/fairyglade/ly) -- via ly (tui-based)
