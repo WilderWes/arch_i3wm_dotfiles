@@ -63,6 +63,7 @@ This is an Arch Install using the cachyos-repos and some of the post-install tip
 - [maim](https://github.com/naelstrof/maim) -- screenshot utility
 - [brightnessctl](https://github.com/Hummer12007/brightnessctl) -- enable brightness control keys
 - [dex-autostart](https://github.com/jceb/dex) -- autostart programs
+- [snixembed](https://man.archlinux.org/man/extra/snixembed/snixembed.1.en) -- per [reddit](https://www.reddit.com/r/i3wm/comments/ywz4t8/i3_not_showing_tray_icons_for_eg_discord_and/) this fixes some i3bar apps not showing up
 
 ## Terminal & Shell
 
