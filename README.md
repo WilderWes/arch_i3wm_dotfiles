@@ -16,7 +16,7 @@ This is an Arch Install using the cachyos-repos and some of the post-install tip
 
 ## Arch Setup
 
-- [cachyos-repos](https://wiki.cachyos.org/features/optimized_repos/#adding-our-repositories-to-an-existing-arch-linux-install) -- repos have some nice pre-built binaries `paru`, `vesktop`, `localsend`, `qt5-webengine (for davinci-resolve)` to name a few
+- [cachyos-repos](https://wiki.cachyos.org/features/optimized_repos/#adding-our-repositories-to-an-existing-arch-linux-install) -- repos have some nice pre-built binaries `paru`, `vesktop`, `localsend`, `cloudflare-warp-bin`, `qt5-webengine (for davinci-resolve)` to name a few
   - [downgrade](https://aur.archlinux.org/packages/downgrade) -- makes it easy to rollback a broken pkg
 - [linux-zen kernel](https://wiki.archlinux.org/title/Kernel) -- for improved desktop performance and responsiveness
 - [display-manager](https://github.com/fairyglade/ly) -- via ly (tui-based)
@@ -63,7 +63,7 @@ This is an Arch Install using the cachyos-repos and some of the post-install tip
 - [maim](https://github.com/naelstrof/maim) -- screenshot utility
 - [brightnessctl](https://github.com/Hummer12007/brightnessctl) -- enable brightness control keys
 - [dex-autostart](https://github.com/jceb/dex) -- autostart programs
-- [snixembed](https://man.archlinux.org/man/extra/snixembed/snixembed.1.en) -- per [reddit](https://www.reddit.com/r/i3wm/comments/ywz4t8/i3_not_showing_tray_icons_for_eg_discord_and/) this fixes some i3bar apps not showing up
+- [snixembed](https://www.reddit.com/r/i3wm/comments/ywz4t8/i3_not_showing_tray_icons_for_eg_discord_and/) -- fixes some apps not showing up in `i3bar` like `dropbox`, `cloudflare-warp taskbar`
 
 ## Terminal & Shell
 
