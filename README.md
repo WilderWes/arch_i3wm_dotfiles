@@ -13,6 +13,7 @@ This is an Arch Install using the cachyos-repos and some of the post-install tip
 ## Pitfalls
 
 - No automated external monitor support atm but autorandr will be added at a later date.
+- probably can remove `oh-my-zsh`...
 
 ## Arch Setup
 
