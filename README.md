@@ -18,8 +18,9 @@ This is an Arch Install using the cachyos-repos and some of the post-install tip
 ## Arch Setup
 
 - [cachyos-repos](https://wiki.cachyos.org/features/optimized_repos/#adding-our-repositories-to-an-existing-arch-linux-install) -- repos have some nice pre-built binaries `paru`, `vesktop`, `localsend`, `cloudflare-warp-bin`, `qt5-webengine (for davinci-resolve)` to name a few
-  - [downgrade](https://aur.archlinux.org/packages/downgrade) -- makes it easy to rollback a broken pkg
-- [linux-zen kernel](https://wiki.archlinux.org/title/Kernel) -- for improved desktop performance and responsiveness
+  - [linux-cachyos kernel](https://wiki.cachyos.org/features/kernel/) & [cachyos-settings](https://wiki.cachyos.org/features/cachyos_settings/)-- for improved desktop performance and responsiveness
+- [downgrade](https://aur.archlinux.org/packages/downgrade) -- makes it easy to rollback a broken pkg
+- [pactree](https://wiki.archlinux.org/title/Pacman) -- part of `pacman-contrib`; shows dependency tree
 - [display-manager](https://github.com/fairyglade/ly) -- via ly (tui-based)
   - [keyring/pam setup](https://wiki.archlinux.org/title/GNOME/Keyring) -- to get 1password working
 - [printer support](https://wiki.archlinux.org/title/CUPS) -- via cups/avahi-daemon/nss-mdns
