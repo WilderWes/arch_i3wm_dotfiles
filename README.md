@@ -71,13 +71,7 @@ This is an Arch Install using the cachyos-repos and some of the post-install tip
 ## Terminal & Shell
 
 - [ghostty](https://ghostty.org/download) -- JetBrains Mono and Tokyo Night theme
-- [oh-my-zsh](https://ohmyz.sh/) with plugins:
-  - [git](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git) (built-in)
-  - [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
-  - [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
-  - [zsh-completions](https://github.com/zsh-users/zsh-completions)
-  - [gradle-completion](https://github.com/gradle/gradle-completion)
-  - [zsh-nvm](https://github.com/lukechilds/zsh-nvm) (lazy-loaded for faster startup)
+- [zsh](https://wiki.archlinux.org/title/Zsh)
 - [starship](https://starship.rs/) -- terminal prompt
 - [eza](https://github.com/eza-community/eza) -- ls replacement
 - [fastfetch](https://github.com/fastfetch-cli/fastfetch) -- fetch system info on shell start
