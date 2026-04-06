@@ -60,7 +60,7 @@ This is an Arch Install using the cachyos-repos and some of the post-install tip
 - [pasystray](https://github.com/christophgysin/pasystray) -- show audio icon in i3bar
 - [Picom](https://github.com/yshui/picom) -- prevent screen-tearing via vysnc and egl backend
 - [rofi](https://github.com/davatorium/rofi) -- file browser
-- [feh](https://feh.finalrewind.org/) -- wallpaper
+- [hsetroot](https://archlinux.org/packages/extra/x86_64/hsetroot/) -- wallpaper
 [xclip](https://github.com/astrand/xclip) -- clipboard
 - [xss-lock](https://bitbucket.org/raymonad/xss-lock) + [i3lock](https://i3wm.org/i3lock/) + [xidlehook](https://wiki.archlinux.org/title/I3) -- lock i3wm
 - [maim](https://github.com/naelstrof/maim) -- screenshot utility

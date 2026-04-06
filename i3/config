@@ -31,7 +31,8 @@ exec --no-startup-id picom
 exec --no-startup-id redshift-gtk
 exec --no-startup-id pasystray
 exec --no-startup-id /usr/bin/lxqt-policykit-agent
-exec_always --no-startup-id feh --bg-fill ~/Dropbox/wp_personal/nightmode_wallpaper.png
+# https://www.reddit.com/r/archlinux/comments/ijwqfj/picom_xsetroot/
+exec --no-startup-id hsetroot -solid "#1a1b26"
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
