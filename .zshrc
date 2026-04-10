@@ -38,6 +38,14 @@ function y() {
     rm -f -- "$tmp"
 }
 
+# https://www.johnhawthorn.com/2012/09/vi-escape-delays/
+# 10ms for key sequences
+KEYTIMEOUT=1
+bindkey -v
+# allow backspace in vi
+# https://github.com/spaceship-prompt/spaceship-prompt/issues/91
+bindkey "^?" backward-delete-char
+
 # History
 HISTSIZE=1000
 SAVEHIST=1000
