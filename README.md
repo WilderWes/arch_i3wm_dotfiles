@@ -67,6 +67,7 @@ This is an Arch Install using the cachyos-repos and some of the post-install tip
 - [brightnessctl](https://github.com/Hummer12007/brightnessctl) -- enable brightness control keys
 - [dex-autostart](https://github.com/jceb/dex) -- autostart programs
 - [snixembed](https://www.reddit.com/r/i3wm/comments/ywz4t8/i3_not_showing_tray_icons_for_eg_discord_and/) -- fixes some apps not showing up in `i3bar` like `dropbox`, `cloudflare-warp taskbar`
+- [unclutter](https://wiki.archlinux.org/title/Unclutter) -- hide mouse cursor after 5 seconds
 
 ## Terminal & Shell
 
