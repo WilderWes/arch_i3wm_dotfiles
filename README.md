@@ -21,6 +21,7 @@ This is an Arch Install using the cachyos-repos and some of the post-install tip
   - [linux-cachyos kernel](https://wiki.cachyos.org/features/kernel/) & [cachyos-settings](https://wiki.cachyos.org/features/cachyos_settings/)-- for improved desktop performance and responsiveness
 - [downgrade](https://aur.archlinux.org/packages/downgrade) -- makes it easy to rollback a broken pkg
 - [pactree](https://wiki.archlinux.org/title/Pacman) -- part of `pacman-contrib`; shows dependency tree
+- [acpid](https://wiki.archlinux.org/title/Acpid) -- this fixes thinkpad audio key leds
 - [display-manager](https://github.com/fairyglade/ly) -- via ly (tui-based)
   - [keyring/pam setup](https://wiki.archlinux.org/title/GNOME/Keyring) -- to get 1password working
 - [printer support](https://wiki.archlinux.org/title/CUPS) -- via cups/avahi-daemon/nss-mdns
@@ -92,10 +93,9 @@ This is an Arch Install using the cachyos-repos and some of the post-install tip
 
 ## Browsers
 
-- [firefox](https://www.firefox.com/en-US/) -- main browser
+- [firefox-developer-edition](https://www.firefox.com/en-US/channel/desktop/developer/) -- main browser
   - [DarkReader](https://darkreader.org/)
   - [uBlock Origin](https://ublockorigin.com/)
-  - [bypass-paywalls](https://gitflic.ru/project/magnolia1234/bypass-paywalls-firefox-clean)
   - [SponsorBlock](https://sponsor.ajay.app/)
   - [Unhook](https://unhook.app/)
   - [1Password](https://1password.com/downloads/browser-extension)
