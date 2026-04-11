@@ -1,9 +1,9 @@
 # https://fishshell.com/docs/current/fish_for_bash_users.html
 
 # XDG Base Dir
-set XDG_CONFIG_HOME "$HOME/.config"
-set XDG_CACHE_HOME "$HOME/.cache"
-set XDG_DATA_HOME "$HOME/.local/share"
+set -x XDG_CONFIG_HOME "$HOME/.config"
+set -x XDG_CACHE_HOME "$HOME/.cache"
+set -x XDG_DATA_HOME "$HOME/.local/share"
 
 # Aliases
 alias get_idf='. $HOME/esp/esp-idf/export.sh'
@@ -13,8 +13,12 @@ alias update-grub="sudo grub-mkconfig -o /boot/grub/grub.cfg"
 alias x-copy="xclip -selection clipboard"
 
 # Go
-set GOPATH "$XDG_DATA_HOME/go"
-set PATH "$PATH:$GOPATH/bin"
+set -x GOPATH "$XDG_DATA_HOME/go"
+set -x PATH "$PATH:$GOPATH/bin"
+
+# manpage
+# https://www.reddit.com/r/neovim/comments/1k1k9bz/use_neovim_as_the_default_man_page_viewer/
+set -x MANPAGER "nvim +Man!"
 
 # yazi
 function y
