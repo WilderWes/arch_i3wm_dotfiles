@@ -1,5 +1,8 @@
 # https://fishshell.com/docs/current/fish_for_bash_users.html
 
+# vi mode
+fish_vi_key_bindings
+
 # XDG Base Dir
 set -x XDG_CONFIG_HOME "$HOME/.config"
 set -x XDG_CACHE_HOME "$HOME/.cache"
@@ -15,6 +18,9 @@ alias x-copy="xclip -selection clipboard"
 # Go
 set -x GOPATH "$XDG_DATA_HOME/go"
 set -x PATH "$PATH:$GOPATH/bin"
+
+# Ocaml
+test -r '/home/wpreising/.opam/opam-init/init.fish' && source '/home/wpreising/.opam/opam-init/init.fish' >/dev/null 2>/dev/null; or true
 
 # manpage
 # https://www.reddit.com/r/neovim/comments/1k1k9bz/use_neovim_as_the_default_man_page_viewer/
