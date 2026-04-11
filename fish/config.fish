@@ -9,7 +9,6 @@ set -x XDG_CACHE_HOME "$HOME/.cache"
 set -x XDG_DATA_HOME "$HOME/.local/share"
 
 # Aliases
-alias get_idf='. $HOME/esp/esp-idf/export.sh'
 alias ls='eza -la --color=always --group-directories-first --icons'
 alias fastfetch="fastfetch --config examples/8.jsonc"
 alias update-grub="sudo grub-mkconfig -o /boot/grub/grub.cfg"
