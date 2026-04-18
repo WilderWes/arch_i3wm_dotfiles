@@ -13,7 +13,6 @@ This is an Arch Install using the cachyos-repos and some of the post-install tip
 ## Pitfalls
 
 - No automated external monitor support atm but autorandr will be added at a later date.
-- probably can remove `oh-my-zsh`...
 
 ## Arch Setup
 
@@ -43,8 +42,7 @@ This is an Arch Install using the cachyos-repos and some of the post-install tip
 ## Current Languages
 
 - git
-- bash
-- zsh
+- bash/zsh/fish
 - latex
 - C/C++
 - python
@@ -73,7 +71,7 @@ This is an Arch Install using the cachyos-repos and some of the post-install tip
 ## Terminal & Shell
 
 - [ghostty](https://ghostty.org/download) -- JetBrains Mono and Tokyo Night theme
-- [zsh](https://wiki.archlinux.org/title/Zsh)
+- [fish](https://fishshell.com/)
 - [starship](https://starship.rs/) -- terminal prompt
 - [eza](https://github.com/eza-community/eza) -- ls replacement
 - [fastfetch](https://github.com/fastfetch-cli/fastfetch) -- fetch system info on shell start
