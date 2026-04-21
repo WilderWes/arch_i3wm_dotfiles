@@ -37,6 +37,7 @@ This is an Arch Install using the cachyos-repos and some of the post-install tip
   - [qt5ct](https://github.com/desktop-app/qt5ct) [qt6ct](https://github.com/trialuser02/qt6ct) [adw-gtk3-theme](https://github.com/lassekango83/adw-gtk3)
 - [disable audio suspension pipewire](https://wiki.archlinux.org/title/PipeWire) -- prevents clipping when audio stops/starts
 - [LocalSend](https://localsend.org/) -- cross-platform file sharing
+  - [ufw firewall localsend profile](https://github.com/localsend/localsend/issues/1230)
 - [flameshot](https://flameshot.org/) -- screenshot
 
 ## Current Languages
