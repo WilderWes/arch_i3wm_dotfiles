@@ -21,6 +21,7 @@ This is an Arch Install using the cachyos-repos and some of the post-install tip
 - [downgrade](https://aur.archlinux.org/packages/downgrade) -- makes it easy to rollback a broken pkg
 - [pactree](https://wiki.archlinux.org/title/Pacman) -- part of `pacman-contrib`; shows dependency tree
 - [acpid](https://wiki.archlinux.org/title/Acpid) -- this fixes thinkpad audio key leds
+  - [alsa-firmware alsa-tools] (<https://wiki.archlinux.org/title/Linux_firmware>) -- also required
 - [display-manager](https://github.com/fairyglade/ly) -- via ly (tui-based)
   - [keyring/pam setup](https://wiki.archlinux.org/title/GNOME/Keyring) -- to get 1password working
 - [printer support](https://wiki.archlinux.org/title/CUPS) -- via cups/avahi-daemon/nss-mdns
