@@ -107,6 +107,7 @@ This is an Arch Install using the cachyos-repos and some of the post-install tip
 
 ## Music Production
 
+- [realtime-privileges](https://wiki.archlinux.org/title/Realtime_process_management) -- remember to add user to group!
 - [Transcribe!](https://www.seventhstring.com/) -- slow down audio, loop sections, transcribe by ear
 - [yt-dlp](https://github.com/yt-dlp/yt-dlp) -- download videos/audio from YouTube
 - [Bitwig Studio](https://www.bitwig.com/) -- DAW
