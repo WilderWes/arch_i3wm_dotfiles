@@ -8,6 +8,9 @@ set -x XDG_CONFIG_HOME "$HOME/.config"
 set -x XDG_CACHE_HOME "$HOME/.cache"
 set -x XDG_DATA_HOME "$HOME/.local/share"
 
+# Path
+set -x PATH "$PATH:$HOME/.local/bin"
+
 # Aliases
 alias ls='eza -la --color=always --group-directories-first --icons'
 alias fastfetch="fastfetch --config examples/8.jsonc"
