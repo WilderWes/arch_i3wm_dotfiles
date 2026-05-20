@@ -70,7 +70,7 @@ bindsym $mod+slash exec --no-startup-id "rofi -modi drun,run -show drun -theme A
 
 # keybinds
 bindsym $mod+Escape exec --no-startup-id loginctl lock-session
-bindsym $mod+b exec --no-startup-id firefox-developer-edition
+bindsym $mod+b exec --no-startup-id firefox
 bindsym $mod+f exec --no-startup-id ghostty -e yazi
 bindsym $mod+p exec --no-startup-id 1password
 bindsym $mod+d exec --no-startup-id vesktop
