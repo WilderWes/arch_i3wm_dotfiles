@@ -36,6 +36,9 @@ This is an Arch Install using the cachyos-repos and some of the post-install tip
   - [1Password](https://1password.com/) -- password manager desktop app (`$mod+p`)
 - [dark theme reddit](<https://www.reddit.com/r/hyprland/comments/1h4abmt/how_do_i_apply_dark_theme/>) -- system wide darkmode from reddit
   - [qt5ct](https://github.com/desktop-app/qt5ct) [qt6ct](https://github.com/trialuser02/qt6ct) [adw-gtk3-theme](https://github.com/lassekango83/adw-gtk3)
+- [fwupdmgr](https://wiki.archlinux.org/title/Fwupd)
+  - [udisks2](https://wiki.archlinux.org/title/Udisks)
+  - [udisks2-btrfs](https://archlinux.org/packages/extra/x86_64/udisks2-btrfs/)
 - [disable audio suspension pipewire](https://wiki.archlinux.org/title/PipeWire) -- prevents clipping when audio stops/starts
 - [LocalSend](https://localsend.org/) -- cross-platform file sharing
   - [ufw firewall localsend profile](https://github.com/localsend/localsend/issues/1230)
