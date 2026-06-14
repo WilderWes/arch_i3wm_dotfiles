@@ -24,6 +24,10 @@ set -x PATH "$PATH:$GOPATH/bin"
 # Ocaml
 test -r '/home/wpreising/.opam/opam-init/init.fish' && source '/home/wpreising/.opam/opam-init/init.fish' >/dev/null 2>/dev/null; or true
 
+# set neovim as default
+set -x EDITOR nvim
+set -x VISUAL nvim
+
 # manpage
 # https://www.reddit.com/r/neovim/comments/1k1k9bz/use_neovim_as_the_default_man_page_viewer/
 set -x MANPAGER "nvim +Man!"
