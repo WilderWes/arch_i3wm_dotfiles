@@ -1,7 +1,7 @@
 # Arch i3wm Dotfiles
 
 Author: Weston Preising
-Date: 2026-03-31
+Date: 2026-06-16
 
 ## Intro
 
