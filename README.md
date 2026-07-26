@@ -1,7 +1,7 @@
 # Arch i3wm Dotfiles
 
 Author: Weston Preising
-Date: 2026-06-16
+Date: 2026-07-26
 
 ## Intro
 
@@ -17,30 +17,29 @@ This is an Arch Install using the cachyos-repos and some of the post-install tip
 ## Arch Setup
 
 - [cachyos-repos](https://wiki.cachyos.org/features/optimized_repos/#adding-our-repositories-to-an-existing-arch-linux-install) -- repos have some nice pre-built binaries `paru`, `vesktop`, `localsend`, `cloudflare-warp-bin`, `qt5-webengine (for davinci-resolve)` to name a few
-  - [linux-cachyos kernel](https://wiki.cachyos.org/features/kernel/) & [cachyos-settings](https://wiki.cachyos.org/features/cachyos_settings/)-- for improved desktop performance and responsiveness
+  - [linux-cachyos](https://wiki.cachyos.org/features/kernel/) + [linux-cachyos-headers](https://wiki.cachyos.org/features/kernel/) + [cachyos-settings](https://wiki.cachyos.org/features/cachyos_settings/) -- for improved desktop performance and responsiveness
 - [downgrade](https://aur.archlinux.org/packages/downgrade) -- makes it easy to rollback a broken pkg
-- [pactree](https://wiki.archlinux.org/title/Pacman) -- part of `pacman-contrib`; shows dependency tree
+- [pacman-contrib](https://wiki.archlinux.org/title/Pacman) -- `pactree` shows dependency tree
 - [acpid](https://wiki.archlinux.org/title/Acpid) -- this fixes thinkpad audio key leds
-  - [alsa-firmware alsa-tools alsa-utils] (<https://wiki.archlinux.org/title/Linux_firmware>) -- also required
-- [display-manager](https://github.com/fairyglade/ly) -- via ly (tui-based)
-  - [keyring/pam setup](https://wiki.archlinux.org/title/GNOME/Keyring) -- to get 1password working
-- [printer support](https://wiki.archlinux.org/title/CUPS) -- via cups/avahi-daemon/nss-mdns
-- [post-update system snapshots](https://wiki.archlinux.org/title/Snapper) via snapper/btrfs-assistant and instructions from cachyos-wiki
-- [bluelight filter](https://wiki.archlinux.org/title/Redshift) -- via redshift
+  - [alsa-firmware alsa-tools alsa-utils](https://wiki.archlinux.org/title/Linux_firmware) -- also required
+- [ly](https://github.com/fairyglade/ly) -- tui-based display manager
+  - [gnome-keyring seahorse](https://wiki.archlinux.org/title/GNOME/Keyring) -- pam setup to get 1password working; `seahorse` is the keyring GUI
+- [cups avahi nss-mdns](https://wiki.archlinux.org/title/CUPS) -- printer support
+- [snapper btrfs-assistant snap-pac](https://wiki.archlinux.org/title/Snapper) -- post-update system snapshots, see cachyos-wiki for setup
+- [redshift](https://wiki.archlinux.org/title/Redshift) -- bluelight filter
 - [noto-fonts-*](https://www.reddit.com/r/archlinux/comments/rm3kch/which_fonts_do_you_guys_actually_install/) -- a good set of fonts for entire system
   - `sudo pacman -S $(pacman -Ssq noto-fonts)`
 - [fontconfig](https://wiki.archlinux.org/title/Font_configuration) + `.Xresources` -- font rendering (hinting, antialiasing) and HiDPI DPI settings
 - [security](https://wiki.cachyos.org/configuration/post_install_setup/)
-  - [AppArmor](https://wiki.archlinux.org/title/AppArmor) -- mandatory access control (MAC) security framework
+  - [apparmor](https://wiki.archlinux.org/title/AppArmor) -- mandatory access control (MAC) security framework
   - [ufw](https://wiki.archlinux.org/title/Uncomplicated_Firewall) -- uncomplicated firewall
-  - [1Password](https://1password.com/) -- password manager desktop app (`$mod+p`)
-- [dark theme reddit](<https://www.reddit.com/r/hyprland/comments/1h4abmt/how_do_i_apply_dark_theme/>) -- system wide darkmode from reddit
-  - [qt5ct](https://github.com/desktop-app/qt5ct) [qt6ct](https://github.com/trialuser02/qt6ct) [adw-gtk3-theme](https://github.com/lassekango83/adw-gtk3)
-- [fwupdmgr](https://wiki.archlinux.org/title/Fwupd)
-  - [udisks2](https://wiki.archlinux.org/title/Udisks)
-  - [udisks2-btrfs](https://archlinux.org/packages/extra/x86_64/udisks2-btrfs/)
-- [disable audio suspension pipewire](https://wiki.archlinux.org/title/PipeWire) -- prevents clipping when audio stops/starts
-- [LocalSend](https://localsend.org/) -- cross-platform file sharing
+  - [1password](https://1password.com/) -- password manager desktop app (`$mod+p`)
+- [qt5ct](https://github.com/desktop-app/qt5ct) + [qt6ct](https://github.com/trialuser02/qt6ct) + [adw-gtk-theme](https://github.com/lassekongo83/adw-gtk3) -- system wide darkmode, see [reddit thread](<https://www.reddit.com/r/hyprland/comments/1h4abmt/how_do_i_apply_dark_theme/>)
+- [fwupd](https://wiki.archlinux.org/title/Fwupd) -- firmware updates via `fwupdmgr`
+  - [udisks2](https://wiki.archlinux.org/title/Udisks) -- required by fwupd
+  - [udisks2-btrfs](https://archlinux.org/packages/extra/x86_64/udisks2-btrfs/) -- btrfs support for udisks2
+- [wireplumber](https://wiki.archlinux.org/title/PipeWire) -- disable audio suspension; prevents clipping when audio stops/starts
+- [localsend](https://localsend.org/) -- cross-platform file sharing
   - [ufw firewall localsend profile](https://github.com/localsend/localsend/issues/1230)
 - [flameshot](https://flameshot.org/) -- screenshot
 
@@ -53,7 +52,11 @@ This is an Arch Install using the cachyos-repos and some of the post-install tip
 - python
 - jdk25
 - go
-- rust -- in progress
+- rust -- to-do
+
+## Documentation
+
+- [zeal](https://github.com/zealdocs/zeal) -- store offline documentation for various languages
 
 ## i3wm Setup
 
@@ -61,15 +64,15 @@ This is an Arch Install using the cachyos-repos and some of the post-install tip
   - caps lock → ctrl, flat pointer accel, tap-to-click, natural scrolling
 - [lxqt-policykit](https://github.com/lxqt/lxqt-policykit) -- program to manage app privileges
 - [network-manager-applet](https://wiki.archlinux.org/title/NetworkManager) -- show network icon in i3bar
+- [blueman] -- gui for bluetooth
 - [pasystray](https://github.com/christophgysin/pasystray) -- show audio icon in i3bar
-- [Picom](https://github.com/yshui/picom) -- prevent screen-tearing via vysnc and egl backend
+- [picom](https://github.com/yshui/picom) -- prevent screen-tearing via vysnc and egl backend
 - [rofi](https://github.com/davatorium/rofi) -- file browser
 - [hsetroot](https://archlinux.org/packages/extra/x86_64/hsetroot/) -- wallpaper
-[xclip](https://github.com/astrand/xclip) -- clipboard
+- [xclip](https://github.com/astrand/xclip) -- clipboard
 - [xss-lock](https://bitbucket.org/raymonad/xss-lock) + [i3lock](https://i3wm.org/i3lock/) + [xidlehook](https://wiki.archlinux.org/title/I3) -- lock i3wm
 - [maim](https://github.com/naelstrof/maim) -- screenshot utility
 - [brightnessctl](https://github.com/Hummer12007/brightnessctl) -- enable brightness control keys
-- [dex-autostart](https://github.com/jceb/dex) -- autostart programs
 - [snixembed](https://www.reddit.com/r/i3wm/comments/ywz4t8/i3_not_showing_tray_icons_for_eg_discord_and/) -- fixes some apps not showing up in `i3bar` like `dropbox`, `cloudflare-warp taskbar`
 - [unclutter](https://wiki.archlinux.org/title/Unclutter) -- hide mouse cursor after 5 seconds
 
@@ -82,26 +85,27 @@ This is an Arch Install using the cachyos-repos and some of the post-install tip
 - [fastfetch](https://github.com/fastfetch-cli/fastfetch) -- fetch system info on shell start
 - [cpdf](https://github.com/coherentgraphics/cpdf-binaries) -- PDF manipulation CLI
 - [tldr](https://github.com/tldr-pages/tldr) -- quick cli tips n' tricks
-- [bear](https://github.com/rizsotto/Bear) -- reads compile commands from make and adds hints to clangd
+- [bear](https://github.com/rizsotto/Bear) -- reads compile commands from make and adds hints to `clangd`
 - [ripgrep-all](https://github.com/phiresky/ripgrep-all) -- ripgrep but for pdfs
 
 ## Editor & File Management
 
 - [yazi](https://github.com/sxyazi/yazi) -- terminal file manager
-- [Neovim](https://neovim.io/) via [LazyVim](https://www.lazyvim.org/) -- notable extra plugins:
-- [vscodium](https://vscodium.com/) -- as needed for school when turning in jupyter notebook assignments
-- [zathura-pdf-poppler](https://pwmt.org/projects/zathura-pdf-poppler/) -- for PDF viewing (dark mode, clipboard selection)
+- [neovim](https://neovim.io/) -- configured via [LazyVim](https://www.lazyvim.org/)
+- [vscodium-bin](https://vscodium.com/) -- as needed for school when turning in jupyter notebook assignments
+- [zathura zathura-pdf-poppler](https://pwmt.org/projects/zathura-pdf-poppler/) -- for PDF viewing (dark mode, clipboard selection)
 - [libreoffice-fresh](https://wiki.archlinux.org/title/LibreOffice)
   - see fonts, hunspell, etc on wiki
 
 ## Browsers
 
-- [firefox](https://www.firefox.com/en-US/) -- main browser
+- [firefox-developer-edition](https://www.firefox-developer-edition.com/en-US/) -- main browser
   - [DarkReader](https://darkreader.org/)
   - [uBlock Origin](https://ublockorigin.com/)
   - [SponsorBlock](https://sponsor.ajay.app/)
   - [Unhook](https://unhook.app/)
   - [1Password](https://1password.com/downloads/browser-extension)
+  - [bypass-paywalls](https://gitflic.ru/user/magnolia1234)
 - [qutebrowser](https://qutebrowser.org/) used strictly for [Markdown Preview](https://github.com/iamcco/markdown-preview.nvim)
 
 ## Communication
@@ -111,12 +115,13 @@ This is an Arch Install using the cachyos-repos and some of the post-install tip
 ## Music Production
 
 - [realtime-privileges](https://wiki.archlinux.org/title/Realtime_process_management) -- remember to add user to group!
-- [Transcribe!](https://www.seventhstring.com/) -- slow down audio, loop sections, transcribe by ear
+- [transcribe](https://www.seventhstring.com/) -- slow down audio, loop sections, transcribe by ear
 - [yt-dlp](https://github.com/yt-dlp/yt-dlp) -- download videos/audio from YouTube
-- [Bitwig Studio](https://www.bitwig.com/) -- DAW
-- [DaVinci Resolve Studio](https://www.blackmagicdesign.com/products/davinciresolve) -- video editing
-- [OBS Studio](https://obsproject.com/) with [DroidCam](https://www.dev47apps.com/) -- recording/streaming
+- [bitwig-studio](https://www.bitwig.com/) -- DAW
+- [davinci-resolve-studio](https://www.blackmagicdesign.com/products/davinciresolve) -- video editing
+- [obs-studio](https://obsproject.com/) -- recording/streaming
+  - [droidcam-obs-plugin](https://www.dev47apps.com/) -- use an android phone as a webcam source
 
 ## AI Usage
 
-- Currently taking a break from AI -- even in the minimal capacity it was used. Reading man-pages and official documentation via Zeal takes more time but I find leads to a deeper understanding and satisfaction for me personally.
+- Using minimally to find better primary source materials or as a socratic tutor for debugging/optimizing code
