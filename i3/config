@@ -15,10 +15,6 @@ font pango:JetBrains Mono 9
 
 # Start XDG autostart .desktop files using dex. See also
 # https://wiki.archlinux.org/index.php/XDG_Autostart
-exec --no-startup-id dex-autostart --autostart --environment i3
-exec --no-startup-id snixembed
-exec --no-startup-id unclutter --start-hidden --ignore-scrolling
-
 
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
@@ -28,6 +24,10 @@ exec --no-startup-id unclutter --start-hidden --ignore-scrolling
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock -c 1a1b26 --nofork
 exec --no-startup-id xidlehook --not-when-audio --not-when-fullscreen --detect-sleep --timer 300 'loginctl lock-session' ''
 
+exec --no-startup-id snixembed
+exec --no-startup-id unclutter --start-hidden --ignore-scrolling
+
+exec --no-startup-id 1password --silent
 exec --no-startup-id dropbox start -i
 exec --no-startup-id picom
 exec --no-startup-id redshift-gtk
