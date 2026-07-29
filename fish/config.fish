@@ -12,7 +12,7 @@ set -x XDG_DATA_HOME "$HOME/.local/share"
 set -x PATH "$PATH:$HOME/.local/bin"
 
 # Aliases
-alias ls='eza -la --color=always --group-directories-first --icons'
+alias ls='eza -la --color=always --group-directories-first --icons=auto'
 alias fastfetch="fastfetch --config examples/8.jsonc"
 alias update-grub="sudo grub-mkconfig -o /boot/grub/grub.cfg"
 alias x-copy="xclip -selection clipboard"
