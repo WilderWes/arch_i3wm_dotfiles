@@ -65,7 +65,6 @@ This is an Arch Install using the cachyos-repos and some of the post-install tip
 - [lxqt-policykit](https://github.com/lxqt/lxqt-policykit) -- program to manage app privileges
 - [network-manager-applet](https://wiki.archlinux.org/title/NetworkManager) -- show network icon in i3bar
 - [blueman] -- gui for bluetooth
-- [pasystray](https://github.com/christophgysin/pasystray) -- show audio icon in i3bar
 - [picom](https://github.com/yshui/picom) -- prevent screen-tearing via vysnc and egl backend
 - [rofi](https://github.com/davatorium/rofi) -- file browser
 - [hsetroot](https://archlinux.org/packages/extra/x86_64/hsetroot/) -- wallpaper
