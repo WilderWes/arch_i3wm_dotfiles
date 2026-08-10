@@ -98,7 +98,7 @@ This is an Arch Install using the cachyos-repos and some of the post-install tip
 
 ## Browsers
 
-- [firefox-developer-edition](https://www.firefox-developer-edition.com/en-US/) -- main browser
+- [firefox](https://www.firefox.com/en-US/) -- main browser
   - [DarkReader](https://darkreader.org/)
   - [uBlock Origin](https://ublockorigin.com/)
   - [SponsorBlock](https://sponsor.ajay.app/)
