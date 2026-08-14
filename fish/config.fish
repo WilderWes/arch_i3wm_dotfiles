@@ -16,6 +16,7 @@ alias ls='eza -la --color=always --group-directories-first --icons=auto'
 alias fastfetch="fastfetch --config examples/8.jsonc"
 alias update-grub="sudo grub-mkconfig -o /boot/grub/grub.cfg"
 alias x-copy="xclip -selection clipboard"
+alias g++="g++ -std=c++23"
 
 # Go
 set -x GOPATH "$XDG_DATA_HOME/go"
