@@ -22,7 +22,7 @@ font pango:JetBrains Mono 9
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock -c 1a1b26 --nofork
-exec --no-startup-id xidlehook --not-when-audio --not-when-fullscreen --detect-sleep --timer 300 'loginctl lock-session' ''
+exec --no-startup-id xidlehook --not-when-fullscreen --detect-sleep --timer 300 'loginctl lock-session' '' --timer 60 'systemctl suspend' ''
 
 exec --no-startup-id snixembed
 exec --no-startup-id unclutter --start-hidden --ignore-scrolling
