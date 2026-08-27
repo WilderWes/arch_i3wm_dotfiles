@@ -98,6 +98,7 @@ This is an Arch Install using the cachyos-repos and some of the post-install tip
 - [zathura zathura-pdf-poppler](https://pwmt.org/projects/zathura-pdf-poppler/) -- for PDF viewing (dark mode, clipboard selection)
 - [libreoffice-fresh](https://wiki.archlinux.org/title/LibreOffice)
   - see fonts, hunspell, etc on wiki
+- [canvas_downloader](https://pypi.org/project/canvas_downloader/) -- great way to bulk download canvas pdfs
 
 ## Browsers
 
