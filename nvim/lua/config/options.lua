@@ -12,5 +12,5 @@ vim.g.mkdp_browser = "qutebrowser"
 -- use zathura for vimtex
 vim.g.vimtex_view_method = "zathura"
 
--- use basedpyright with type checking instead of pyright
-vim.g.lazyvim_python_lsp = "basedpyright"
+-- Set to "basedpyright" to use basedpyright instead of pyright.
+vim.g.lazyvim_python_lsp = "pyright"
