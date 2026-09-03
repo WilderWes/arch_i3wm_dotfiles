@@ -25,6 +25,9 @@ set -x PATH "$PATH:$GOPATH/bin"
 # Ocaml
 test -r '/home/wpreising/.opam/opam-init/init.fish' && source '/home/wpreising/.opam/opam-init/init.fish' >/dev/null 2>/dev/null; or true
 
+# devcontainer-cli (https://github.com/devcontainers/cli)
+set -x PATH "$HOME/.devcontainers/bin:$PATH"
+
 # set neovim as default
 set -x EDITOR nvim
 set -x VISUAL nvim
