@@ -18,6 +18,8 @@ This is an Arch Install using the cachyos-repos and some of the post-install tip
 
 - [cachyos-repos](https://wiki.cachyos.org/features/optimized_repos/#adding-our-repositories-to-an-existing-arch-linux-install) -- repos have some nice pre-built binaries `paru`, `vesktop`, `localsend`, `cloudflare-warp-bin`, `qt5-webengine (for davinci-resolve)` to name a few
   - [linux-cachyos](https://wiki.cachyos.org/features/kernel/) + [linux-cachyos-headers](https://wiki.cachyos.org/features/kernel/) + [cachyos-settings](https://wiki.cachyos.org/features/cachyos_settings/) -- for improved desktop performance and responsiveness
+- [cloudflare-warp](https://developers.cloudflare.com/warp-client/get-started/linux/) -- more secure internet
+  - verify via [dnsleaktest.com](https://www.dnsleaktest.com/)
 - [downgrade](https://aur.archlinux.org/packages/downgrade) -- makes it easy to rollback a broken pkg
 - [pacman-contrib](https://wiki.archlinux.org/title/Pacman) -- `pactree` shows dependency tree
 - [acpid](https://wiki.archlinux.org/title/Acpid) -- this fixes thinkpad audio key leds

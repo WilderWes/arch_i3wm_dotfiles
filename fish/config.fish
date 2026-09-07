@@ -28,6 +28,9 @@ test -r '/home/wpreising/.opam/opam-init/init.fish' && source '/home/wpreising/.
 # devcontainer-cli (https://github.com/devcontainers/cli)
 set -x PATH "$HOME/.devcontainers/bin:$PATH"
 
+# canvas-downloader
+set -x CANVAS_TOKEN ''
+
 # set neovim as default
 set -x EDITOR nvim
 set -x VISUAL nvim
