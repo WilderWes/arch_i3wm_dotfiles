@@ -111,6 +111,7 @@ Vanilla Arch (`core`, `extra`, `multilib`) on btrfs with `linux-zen`; AUR via `p
   - `sudo pacman -S yazi ffmpeg 7zip jq poppler fd ripgrep fzf zoxide resvg imagemagick`
 - [thunar thunar-archive-plugin gvfs](https://wiki.archlinux.org/title/Thunar) -- GUI file manager with trash, auto-mount, extract/compress
 - [neovim](https://neovim.io/) -- configured via [LazyVim](https://www.lazyvim.org/)
+  - [luarocks](https://luarocks.org/) -- lua package manager, lazy.nvim uses it for plugins with rockspecs
 - [vscodium-bin](https://vscodium.com/) -- as needed for school when turning in jupyter notebook assignments
 - [zathura zathura-pdf-poppler](https://pwmt.org/projects/zathura-pdf-poppler/) -- for PDF viewing (dark mode, clipboard selection)
 - [libreoffice-fresh](https://wiki.archlinux.org/title/LibreOffice)
