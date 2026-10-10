@@ -14,22 +14,8 @@ set -x PATH "$PATH:$HOME/.local/bin"
 # Aliases
 alias ls='eza -la --color=always --group-directories-first --icons=auto'
 alias fastfetch="fastfetch --config examples/8.jsonc"
-alias update-grub="sudo grub-mkconfig -o /boot/grub/grub.cfg"
+alias update-boot="sudo sdboot-manage gen"
 alias x-copy="xclip -selection clipboard"
-alias g++="g++ -std=c++23"
-
-# Go
-set -x GOPATH "$XDG_DATA_HOME/go"
-set -x PATH "$PATH:$GOPATH/bin"
-
-# Ocaml
-test -r '/home/wpreising/.opam/opam-init/init.fish' && source '/home/wpreising/.opam/opam-init/init.fish' >/dev/null 2>/dev/null; or true
-
-# devcontainer-cli (https://github.com/devcontainers/cli)
-set -x PATH "$HOME/.devcontainers/bin:$PATH"
-
-# canvas-downloader
-set -x CANVAS_TOKEN ''
 
 # set neovim as default
 set -x EDITOR nvim
@@ -38,6 +24,18 @@ set -x VISUAL nvim
 # manpage
 # https://www.reddit.com/r/neovim/comments/1k1k9bz/use_neovim_as_the_default_man_page_viewer/
 set -x MANPAGER "nvim +Man!"
+
+# Go
+set -x GOPATH "$XDG_DATA_HOME/go"
+set -x PATH "$PATH:$GOPATH/bin"
+
+# devcontainer-cli (https://github.com/devcontainers/cli)
+set -x PATH "$HOME/.devcontainers/bin:$PATH"
+
+# robotics class
+set -x PYTHONPATH "$HOME/robotics/pynaoqi-python2.7-2.8.7.4-linux64-20210819_141148/lib/python2.7/site-packages/"
+set -x QI_SDK_PREFIX "$HOME/robotics/pynaoqi-python2.7-2.8.7.4-linux64-20210819_141148/"
+set -x OPENAI_API_KEY ""
 
 # yazi
 function y
