@@ -40,10 +40,7 @@ Vanilla Arch (`core`, `extra`, `multilib`) on btrfs with `linux-zen`; AUR via `p
 - security
   - [ufw](https://wiki.archlinux.org/title/Uncomplicated_Firewall) -- uncomplicated firewall (`sudo systemctl enable --now ufw`)
   - [1password](https://1password.com/) -- password manager desktop app (`$mod+p`)
-- [qt5ct](https://github.com/desktop-app/qt5ct) + [qt6ct](https://github.com/trialuser02/qt6ct) + [adw-gtk-theme](https://github.com/lassekongo83/adw-gtk3) -- system wide darkmode, see [reddit thread](<https://www.reddit.com/r/hyprland/comments/1h4abmt/how_do_i_apply_dark_theme/>)
-  - `gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'`
-  - `gsettings set org.gnome.desktop.interface gtk-theme 'adw-gtk3-dark'`
-  - `echo 'QT_QPA_PLATFORMTHEME=qt6ct' | sudo tee -a /etc/environment`
+- [qt5ct](https://github.com/desktop-app/qt5ct) + [qt6ct](https://github.com/trialuser02/qt6ct)
 - [fwupd udisks2 udisks2-btrfs](https://wiki.archlinux.org/title/Fwupd) -- firmware updates via `fwupdmgr`
 - [intel graphics](https://wiki.archlinux.org/title/Hardware_video_acceleration) -- `intel-media-driver vpl-gpu-rt vulkan-intel lib32-vulkan-intel lib32-mesa intel-compute-runtime`
 - [pipewire](https://wiki.archlinux.org/title/PipeWire) -- `pipewire-alsa pipewire-pulse pipewire-jack pavucontrol`
