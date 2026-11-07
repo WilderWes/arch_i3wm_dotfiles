@@ -93,7 +93,7 @@ Vanilla Arch (`core`, `extra`, `multilib`) on btrfs with `linux-zen`; AUR via `p
 
 ## Terminal & Shell
 
-- [ghostty](https://ghostty.org/download) -- JetBrains Mono and Tokyo Night theme
+- [ghostty](https://ghostty.org/download) -- JetBrains Mono NL and Tokyo Night theme
 - [fish](https://fishshell.com/)
 - [starship](https://starship.rs/) -- terminal prompt
 - [eza](https://github.com/eza-community/eza) -- ls replacement
