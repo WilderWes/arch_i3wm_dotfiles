@@ -23,6 +23,7 @@ font pango:JetBrains Mono NL 9
 # screen before suspend. Use loginctl lock-session to lock your screen.
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock -c 1a1b26 --nofork
 exec --no-startup-id xidlehook --not-when-audio --not-when-fullscreen --detect-sleep --timer 300 'loginctl lock-session' '' --timer 60 'systemctl suspend' ''
+exec --no-startup-id caffeine
 
 exec --no-startup-id snixembed
 exec --no-startup-id unclutter --start-hidden --ignore-scrolling
